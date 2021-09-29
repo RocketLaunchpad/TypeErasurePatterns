@@ -17,6 +17,7 @@
 		C5024A0F2704B42F0096EC11 /* AnyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5024A0E2704B42F0096EC11 /* AnyWrapper.swift */; };
 		C579C38A2704F4B800A2341D /* AnyMutableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579C3892704F4B800A2341D /* AnyMutableWrapper.swift */; };
 		C579C38C2705020400A2341D /* ContrivedUsageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579C38B2705020400A2341D /* ContrivedUsageExample.swift */; };
+		C579C38F27050C8D00A2341D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C579C38E27050C8D00A2341D /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		C5024A0E2704B42F0096EC11 /* AnyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyWrapper.swift; sourceTree = "<group>"; };
 		C579C3892704F4B800A2341D /* AnyMutableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMutableWrapper.swift; sourceTree = "<group>"; };
 		C579C38B2705020400A2341D /* ContrivedUsageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrivedUsageExample.swift; sourceTree = "<group>"; };
+		C579C38E27050C8D00A2341D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C579C39027050C9B00A2341D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		C50249E42704A99B0096EC11 = {
 			isa = PBXGroup;
 			children = (
+				C579C39027050C9B00A2341D /* README.md */,
+				C579C38E27050C8D00A2341D /* LICENSE */,
 				C50249EF2704A99C0096EC11 /* TypeErasurePatterns */,
 				C50249EE2704A99C0096EC11 /* Products */,
 			);
@@ -169,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C579C38F27050C8D00A2341D /* LICENSE in Resources */,
 				C50249FD2704A9A00096EC11 /* LaunchScreen.storyboard in Resources */,
 				C50249FA2704A9A00096EC11 /* Assets.xcassets in Resources */,
 			);
