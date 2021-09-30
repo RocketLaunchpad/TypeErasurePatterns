@@ -25,6 +25,38 @@
 
 import Foundation
 
+// MARK: - The closure approach will not work
+
+struct WrongWayToWriteAnyMutableWrapper<ValueType>: MutableWrapperProtocol where ValueType: Equatable {
+
+    private let _getValue: () -> ValueType
+
+    private let _setValue: (ValueType) -> Void
+
+    init<T>(_ wrapper: T) where T: MutableWrapperProtocol, T.ValueType == ValueType {
+        _getValue = {
+            return wrapper.value
+        }
+
+        _setValue = { value in
+            // ERROR: Cannot assign to property: 'wrapper' is a 'let' constant
+            // wrapper.value = value
+        }
+    }
+
+    var value: ValueType {
+        get {
+            _getValue()
+        }
+
+        set {
+            _setValue(newValue)
+        }
+    }
+}
+
+// MARK: - The "Right Way" to do mutable type erasure
+
 // Part 1: Private abstract base class
 // -----------------------------------
 //

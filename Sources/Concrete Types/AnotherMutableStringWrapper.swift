@@ -1,5 +1,5 @@
 //
-//  AnyWrapper.swift
+//  AnotherMutableStringWrapper.swift
 //  TypeErasurePatterns
 //
 //  Copyright (c) 2021 Rocket Insights, Inc.
@@ -25,21 +25,7 @@
 
 import Foundation
 
-// MARK: - Type-Erase WrapperProtocol
+struct AnotherMutableStringWrapper: MutableWrapperProtocol {
 
-struct AnyWrapper<ValueType>: WrapperProtocol {
-
-    private let _getValue: () -> ValueType
-
-    init<T>(_ wrapper: T) where T: WrapperProtocol, T.ValueType == ValueType {
-        _getValue = {
-            return wrapper.value
-        }
-    }
-
-    var value: ValueType {
-        get {
-            _getValue()
-        }
-    }
+    var value: String
 }

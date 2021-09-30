@@ -15,6 +15,8 @@
 		C5024A0B2704B3680096EC11 /* StringWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5024A0A2704B3680096EC11 /* StringWrapper.swift */; };
 		C5024A0D2704B37D0096EC11 /* MutableStringWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5024A0C2704B37D0096EC11 /* MutableStringWrapper.swift */; };
 		C5024A0F2704B42F0096EC11 /* AnyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5024A0E2704B42F0096EC11 /* AnyWrapper.swift */; };
+		C579750E27061561008A0D8A /* AnotherStringWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579750D27061561008A0D8A /* AnotherStringWrapper.swift */; };
+		C579751127061A4C008A0D8A /* AnotherMutableStringWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579751027061A4C008A0D8A /* AnotherMutableStringWrapper.swift */; };
 		C579C38A2704F4B800A2341D /* AnyMutableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579C3892704F4B800A2341D /* AnyMutableWrapper.swift */; };
 		C579C38C2705020400A2341D /* ContrivedUsageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579C38B2705020400A2341D /* ContrivedUsageExample.swift */; };
 		C579C38F27050C8D00A2341D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C579C38E27050C8D00A2341D /* LICENSE */; };
@@ -31,6 +33,8 @@
 		C5024A0A2704B3680096EC11 /* StringWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringWrapper.swift; sourceTree = "<group>"; };
 		C5024A0C2704B37D0096EC11 /* MutableStringWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableStringWrapper.swift; sourceTree = "<group>"; };
 		C5024A0E2704B42F0096EC11 /* AnyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyWrapper.swift; sourceTree = "<group>"; };
+		C579750D27061561008A0D8A /* AnotherStringWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherStringWrapper.swift; sourceTree = "<group>"; };
+		C579751027061A4C008A0D8A /* AnotherMutableStringWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherMutableStringWrapper.swift; sourceTree = "<group>"; };
 		C579C3892704F4B800A2341D /* AnyMutableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMutableWrapper.swift; sourceTree = "<group>"; };
 		C579C38B2705020400A2341D /* ContrivedUsageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrivedUsageExample.swift; sourceTree = "<group>"; };
 		C579C38E27050C8D00A2341D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				C5024A0A2704B3680096EC11 /* StringWrapper.swift */,
+				C579750D27061561008A0D8A /* AnotherStringWrapper.swift */,
 				C5024A0C2704B37D0096EC11 /* MutableStringWrapper.swift */,
+				C579751027061A4C008A0D8A /* AnotherMutableStringWrapper.swift */,
 			);
 			path = "Concrete Types";
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				C5024A0D2704B37D0096EC11 /* MutableStringWrapper.swift in Sources */,
 				C579C38A2704F4B800A2341D /* AnyMutableWrapper.swift in Sources */,
 				C50249F12704A99C0096EC11 /* AppDelegate.swift in Sources */,
+				C579750E27061561008A0D8A /* AnotherStringWrapper.swift in Sources */,
 				C5024A072704AAA70096EC11 /* WrapperProtocol.swift in Sources */,
+				C579751127061A4C008A0D8A /* AnotherMutableStringWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

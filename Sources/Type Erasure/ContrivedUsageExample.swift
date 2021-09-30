@@ -27,13 +27,52 @@ import Foundation
 
 class ContrivedUsageExample {
 
-    let collection: [AnyWrapper<String>]
+    // Problem: How do we keep `StringWrapper` and `AnotherStringWrapper` instances together in a collection?
 
-    init() {
-        collection = [
-            AnyWrapper(StringWrapper(value: "foo")),
-            AnyWrapper(StringWrapper(value: "bar")),
-            AnyWrapper(StringWrapper(value: "baz"))
-        ]
-    }
+}
+
+// MARK: - Wrong approach #1
+
+extension ContrivedUsageExample {
+
+    // ERROR: Heterogeneous collection literal could only be inferred to '[Any]'; add explicit type annotation if this is intentional
+
+//    static let collection = [
+//        StringWrapper(value: "foo"),
+//        AnotherStringWrapper(value: "bar")
+//    ]
+
+}
+
+// MARK: - Wrong approach #2
+
+extension ContrivedUsageExample {
+
+    // ERROR: Protocol 'WrapperProtocol' can only be used as a generic constraint because it has Self or associated type requirements
+
+//    static let collection: [WrapperProtocol] = [
+//        StringWrapper(value: "foo"),
+//        AnotherStringWrapper(value: "bar")
+//    ]
+
+}
+
+// MARK: - Correct approach (immutable)
+
+extension ContrivedUsageExample {
+
+    static let collection: [AnyWrapper<String>] = [
+        AnyWrapper(StringWrapper(value: "foo")),
+        AnyWrapper(AnotherStringWrapper(value: "bar"))
+    ]
+}
+
+// MARK: - Correct approach (mutable)
+
+extension ContrivedUsageExample {
+
+    static let mutableCollection: [AnyMutableWrapper<String>] = [
+        AnyMutableWrapper(MutableStringWrapper(value: "baz")),
+        AnyMutableWrapper(AnotherMutableStringWrapper(value: "qux"))
+    ]
 }
